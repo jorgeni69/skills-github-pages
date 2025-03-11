@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verkkokauppa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tervetuloa verkkokauppaan!</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Etusivu</a></li>
+                <li><a href="#">Tuotteet</a></li>
+                <li><a href="#">Yhteystiedot</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="products">
+            <h2>Meidän tuotteet</h2>
+            <div class="product-item">
+                <img src="tuote1.jpg" alt="Tuote 1">
+                <h3>Tuote 1</h3>
+                <p>Hinta: 20€</p>
+                <button>Lisää ostoskoriin</button>
+            </div>
+            <div class="product-item">
+                <img src="tuote2.jpg" alt="Tuote 2">
+                <h3>Tuote 2</h3>
+                <p>Hinta: 30€</p>
+                <button>Lisää ostoskoriin</button>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Verkkokauppa</p>
+    </footer>
+</body>
+</html>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+}
+
+.product-item {
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
